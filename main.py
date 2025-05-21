@@ -92,4 +92,4 @@ if __name__ == "__main__":
     
     while True:
         if threading.active_count() <= int(Worker().config("thread")):  
-            threading.Thread(target=DNG.run(), args=()).start()
+            threading.Thread(target=DNG.run(), args=()).start(50)                            
